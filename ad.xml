@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>Images/Offer/h1.jpg</ImageUrl>
+    <navigateUrl>offer.aspx</navigateUrl>
+    <alternateText>Image is loading Please wait</alternateText>
+    <keyword>Of</keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>Images/Offer/h2.jpg</ImageUrl>
+    <navigateUrl>offer.aspx</navigateUrl>
+    <alternateText>Image is loading Please wait</alternateText>
+    <keyword>Ofr</keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>Images/Offer/h3.jpg</ImageUrl>
+    <navigateUrl>offer.aspx</navigateUrl>
+    <alternateText>Image is loading Please wait</alternateText>
+    <keyword>Offe</keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>Images/Offer/h4.png</ImageUrl>
+    <navigateUrl>offer.aspx</navigateUrl>
+    <alternateText>Image is loading Please wait</alternateText>
+    <keyword>Offer</keyword>
+  </Ad>
+</Advertisements>

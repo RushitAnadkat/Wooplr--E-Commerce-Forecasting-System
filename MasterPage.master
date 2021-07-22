@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style3
+        {
+            height: 94px;
+        }
+        .style4
+        {}
+        .style5
+        {
+            height: 333px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <table style="width: 100%; height: 473px;">
+    
+            <tr>
+                <td class="style3" align="justify" bgcolor="#000099">
+                    <table style="width: 100%; height: 144px;">
+                        <tr>
+                            <td rowspan="2">
+                    <asp:Label ID="site_name" runat="server" Font-Bold="True" 
+                        Font-Names="Monotype Corsiva" Font-Size="68pt" ForeColor="#DF0632" 
+                        Text="Wooplr"></asp:Label>
+                            </td>
+                            <td align="right">
+                                &nbsp;</td>
+                            <td align="right">
+                                <asp:Button 
+                        ID="login_btn" runat="server" 
+                        BackColor="Red" ForeColor="White" Text="Login / Sign Up" Font-Size="15pt" 
+                                    PostBackUrl="~/Default.aspx" />
+                    <asp:Button ID="signup_btn" runat="server" BackColor="Red" ForeColor="White" 
+                        Text="LogOut" Font-Size="15pt" Visible="False" PostBackUrl="~/Home.aspx" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" colspan="2">
+                    <asp:Button ID="home_menu" runat="server" Text="Home" BackColor="#000099" 
+                        BorderColor="White" ForeColor="White" Font-Size="13pt" PostBackUrl="~/Home.aspx" />
+&nbsp;&nbsp;
+                    <asp:DropDownList ID="company_menu" runat="server" BackColor="#000099" 
+                        ForeColor="White" Font-Size="13pt" 
+                                    onselectedindexchanged="company_menu_SelectedIndexChanged" 
+                                    AutoPostBack="True">
+                        <asp:ListItem Value="-1">Select</asp:ListItem>
+                        <asp:ListItem Value="1">Samsung </asp:ListItem>
+                        <asp:ListItem Value="2">Apple </asp:ListItem>
+                    </asp:DropDownList>
+&nbsp;&nbsp;
+                    <asp:Button ID="compare_menu" runat="server" Text="Compare" BackColor="#000099" 
+                        ForeColor="White" Font-Size="13pt" onclick="compare_menu_Click" />
+&nbsp;&nbsp;
+                    &nbsp;
+                    <asp:Button ID="aboutus_menu" runat="server" Text="About us" BackColor="#000099" 
+                        ForeColor="White" Font-Size="13pt" PostBackUrl="~/Aboutus.aspx" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        
+            <tr>
+                <td class="style5">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="style4" align="center" valign="bottom">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        &nbsp;&nbsp;<center><asp:Label ID="footer_btn" runat="server" 
+                        Text="&amp;copy; All Rights reserved (2017-2020)" ForeColor="#FF6600" ></asp:Label></center>
+                &nbsp;
+        
+        </asp:ContentPlaceHolder>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+    </div>
+    </form>
+</body>
+</html>
